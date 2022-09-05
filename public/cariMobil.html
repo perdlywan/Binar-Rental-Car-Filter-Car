@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+    <title>Binar Rental Car</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="page-wrap">
+        <!-- navbar -->
+        <div class="mobile-view">
+            <div class="mobile-view-header">
+                <h2>BCR</h2>
+                <div class="mobile-view-close">
+                    <i class="fa fa-times js-toggle"></i>
+                </div>
+            </div>
+            <div class="mobile-view-body">
+
+            </div>
+        </div>
+
+        <section class="header" id="header">
+            <div class="container py-2 px-2">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.png" class="img-fluid" alt="logo">
+                    </a>
+
+                    <div class="d-inline-block d-lg-none ml-md-0 ml-auto py-3"><i class="fa fa-bars js-toggle"
+                            style="font-size: 25px;"></i></div>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto mr-3 js-clone-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#services">Our Services</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#why">Why Us</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#testimonial">Testimonial</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#faq">FAQ</a>
+                            </li>
+                            <li class="nav-item active">
+                                <button class="btn btn-success">Register</button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <!-- Akhir Navbar -->
+
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="title">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+                        <p class="sub-title">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik
+                            dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/img_car.png" alt="img_car" class="car_img">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Akhir Header -->
+
+        <!-- Searchbox -->
+        <section class="searchBox">
+            <div class="container">
+                <div class="card shadow rounded-lg">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label for="">Tipe Driver</label>
+                                    <select class="form-control" id="tipeDriver" placeholder="Pilih Tipe Driver">
+                                        <option value="1">Dengan Sopir</option>
+                                        <option value="0">Tanpa Sopir (Lepas Kunci)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="form-group">
+                                    <label for="">Tanggal</label>
+                                    <input type="date" class="form-control" id="tanggalRental"
+                                        placeholder="Pilih Tanggal">
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="form-group">
+                                    <label for="">Waktu Jemput/Ambil</label>
+                                    <input type="time" class="form-control" id="waktuJemput">
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label for="">Jumlah Penumpang (Optional)</label>
+                                    <input type="number" class="form-control" id="jumlahPenumpang"
+                                        placeholder="Jumlah Penumpang">
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="form-group">
+                                    <label for="">&nbsp;</label>
+                                    <button class="form-control btn btn-success" id="searchBtn">Cari Mobil</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Akhir Searchbox -->
+
+        <!-- Cars -->
+        <section style="margin-top: 50px;">
+            <div class="container">
+                <div id="cars-container" class="row mt-4">
+                </div>
+            </div>
+        </section>
+        <!-- Akhir Cars -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row d-flex justify-content-around">
+                    <div class="col-lg-3">
+                        <ul class="list-unstyled kolom1">
+                            <li>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</li>
+                            <li>binarcarrental@gmail.com</li>
+                            <li>081-233-334-808</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul class="list-unstyled kolom2">
+                            <li><a href="#services">Our Services</a></li>
+                            <li><a href="#why">Why Us</a></li>
+                            <li><a href="#testimonial">Testimonial</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Connect with us</h5>
+                        <ul class="list-unstyled medsos d-flex">
+                            <li><img src="images/icon_facebook.png" alt="facebook"></li>
+                            <li><img src="images/icon_instagram.png" alt="instagram"></li>
+                            <li><img src="images/icon_twitter.png" alt="twitter"></li>
+                            <li><img src="images/icon_mail.png" alt="mail"></li>
+                            <li><img src="images/icon_twitch.png" alt="twitch"></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul class="list-unstyled kolom4">
+                            <li>Copyright Binar 2022</li>
+                            <li><img src="images/logo.png" alt="logo"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Akhir Footer -->
+    </div>
+
+    <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="./scripts/binar.js"></script>
+    <script type="text/javascript" src="./scripts/app.js"></script>
+    <script type="text/javascript" src="./scripts/car.js"></script>
+    <script type="text/javascript" src="./scripts/main.example.js"></script>
+</body>
+
+</html>

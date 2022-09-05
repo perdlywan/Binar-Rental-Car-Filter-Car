@@ -1,0 +1,706 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Sans-Serif;
+    scroll-behavior: smooth;
+}
+
+.header {
+    background: #F1F3FF;
+}
+
+.navbar-nav .nav-item {
+    padding-right: 32px;
+}
+
+.nav-item a {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.nav-item button {
+    font-style: bold;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.page-wrap:before {
+    transition: .3s all ease-in-out;
+    background: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.offview .page-wrap {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.offview .page-wrap:before {
+    opacity: 0.5;
+    visibility: visible;
+}
+
+.mobile-view {
+    width: 300px;
+    position: fixed;
+    right: 0;
+    z-index: 2000;
+    padding-top: 20px;
+    background: white;
+    height: calc(100vh);
+    transform: translateX(110%);
+    box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+    transition: .3s all ease-in-out;
+}
+
+.offview .mobile-view {
+    transform: translateX(0%);
+}
+
+.mobile-view .mobile-view-header {
+    width: 100%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mobile-view .mobile-view-header h2 {
+    float: left;
+    margin-top: 8px;
+    margin-left: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.mobile-view .mobile-view-header .mobile-view-close {
+    float: right;
+    margin-top: 8px;
+    margin-right: 30px;
+}
+
+.mobile-view .mobile-view-header .mobile-view-close i {
+    font-size: 20px;
+    display: inline-block;
+    padding-right: 10px;
+    line-height: 1;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+.mobile-view .mobile-view-body {
+    overflow: scroll;
+    position: relative;
+    padding: 20px;
+    height: calc(100vh - 52px);
+    padding-bottom: 150px;
+    padding-top: 20px;
+}
+
+.mobile-view .clone-view {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+.mobile-view .clone-view a {
+    display: block;
+    position: relative;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.mobile-view .clone-view button {
+    padding: 10px 10px;
+    display: block;
+    position: relative;
+    font-size: 15px;
+    margin-left: 14px;
+    margin-top: 10px;
+}
+
+
+header {
+    padding-left: 25px;
+    background: #F1F3FF;
+    background-size: cover;
+}
+
+header .title {
+    margin-top: 117px;
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 700;
+}
+
+header .sub-title {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+header .btn-mulai {
+    font-style: bold;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+header img {
+    width: 604px;
+    margin-top: 97px;
+}
+
+
+.services .service_img {
+    margin-top: 100px;
+}
+
+.services-text {
+    margin-top: 136px;
+}
+
+.services-text h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.services-text p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.services .desc-service {
+    padding-top: 16px;
+}
+
+.services .desc-service-text {
+    padding-left: 16px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+
+.why {
+    margin-top: 100px;
+}
+
+.why .title h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.why .title p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.why .fitur {
+    padding-top: 30px;
+}
+
+.fitur .card {
+    width: 268px;
+    height: 196px;
+    border: 1px solid #D0D0D0;
+}
+
+.fitur .card-body h3 {
+    padding-top: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.fitur .card-body p {
+    padding-top: 16px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+
+.testimonial {
+    margin-top: 100px;
+}
+
+.testimonial .row {
+    width: 100%;
+}
+
+.testimonial .title h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.testimonial .title p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.testimonial .card {
+    width: 619px;
+    height: 270px;
+    background: #F1F3FF;
+    border: none;
+    margin-top: 30px;
+}
+
+.testimonial .card .img_person {
+    padding-top: 70px;
+}
+
+.testimonial .card .img_rate {
+    padding-top: 50px;
+}
+
+.testimonial .card-body p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.testimonial .card-body h6 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.carousel-control-prev {
+    background: white;
+    border-radius: 50%;
+    border: 1px solid grey;
+    height: 32px;
+    width: 32px;
+    margin-top: 310px;
+    margin-left: 230px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next {
+    background-color: #5CB85F;
+    border-radius: 50%;
+    border: none;
+    height: 32px;
+    width: 32px;
+    margin-top: 310px;
+    margin-right: 270px;
+}
+
+.carousel-item {
+    flex-direction: row;
+}
+
+
+.banner {
+    margin-top: 150px;
+}
+
+.banner .card {
+    color: #ffffff;
+    background: #0D28A6;
+    height: 326px;
+    border-radius: 13px;
+}
+
+.banner h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    padding-top: 64px;
+}
+
+.banner p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.banner button {
+    margin-top: 52px;
+}
+
+
+.faq {
+    margin-top: 100px;
+}
+
+.faq .title h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.faq .title p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.accordion .card .card-header {
+    background: #ffffff;
+}
+
+.accordion .card-header h2 {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.accordion .card-header .btn {
+    width: 100%;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.accordion .card-header i {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.searchBox{
+    margin-top: -50px;
+}
+
+
+footer {
+    margin-top: 150px;
+}
+
+footer .kolom1 {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+footer .kolom1 li {
+    padding-bottom: 16px;
+}
+
+footer .kolom2 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+footer .kolom2 li {
+    padding-bottom: 16px;
+}
+
+footer .kolom2 li a {
+    color: black;
+    text-decoration: none;
+}
+
+footer h5 {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+footer .medsos li {
+    padding-right: 16px;
+}
+
+footer .kolom4 {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+footer .kolom4 li {
+    padding-bottom: 10px;
+}
+
+footer .kolom4 li a {
+    color: black;
+}
+
+/* Mobile */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+    .container {
+        width: 100%;
+        max-width: none;
+    }
+
+    header {
+        padding-left: 8px;
+    }
+
+    header .title {
+        margin-top: 15px;
+        font-size: 30px;
+    }
+
+    header img {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .mobile-view {
+        width: 180px;
+    }
+
+    .mobile-view .mobile-view-header .mobile-view-close {
+        margin-right: 5px;
+    }
+
+    .services .service_img {
+        margin-top: 60px;
+        width: 252px;
+    }
+
+    .services-text {
+        margin-top: 30px;
+    }
+
+    .services-text h2 {
+        font-size: 20px;
+    }
+
+    .services-text p {
+        font-size: 12px;
+    }
+
+    .services .desc-service {
+        padding-top: 14px;
+    }
+
+    .services .desc-service-text {
+        font-size: 12px;
+    }
+
+    .why {
+        margin-top: 50px;
+    }
+
+    .why .title h2 {
+        text-align: center;
+    }
+
+    .why .title p {
+        text-align: center;
+    }
+
+    .why .fitur {
+        padding-top: 15px;
+    }
+
+    .fitur .card {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .testimonial {
+        margin-top: 30px;
+    }
+
+    .testimonial .title p {
+        padding: 0 14px;
+    }
+
+    .testimonial .card {
+        margin-top: 5px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .testimonial .card .img_person {
+        padding-top: 20px;
+        padding-left: 35px;
+    }
+
+    .testimonial .card .img_rate {
+        padding: 30px 90px;
+    }
+
+    .testimonial .card-body p {
+        font-size: 12px;
+        padding-left: 25px;
+    }
+
+    .testimonial .card-body h6 {
+        padding-left: 25px;
+    }
+
+    .carousel-control-prev {
+        margin-top: 420px;
+        margin-left: 230px;
+    }
+
+    .carousel-control-next {
+        margin-top: 420px;
+        margin-right: 270px;
+    }
+
+    .carousel-control-next {
+        margin-right: 100px;
+    }
+
+    .carousel-control-prev {
+        margin-left: 100px;
+    }
+
+    .banner .container {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .banner .card {
+        height: 100%;
+    }
+
+    .banner {
+        margin-top: 100px;
+    }
+
+    .banner h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        padding-left: 8px;
+    }
+
+    .banner p {
+        padding-left: 8px;
+    }
+
+    .banner button {
+        margin-top: 32px;
+        margin-bottom: 64px;
+    }
+
+    .faq {
+        margin-top: 60px;
+    }
+
+    .faq .title {
+        padding: 0 20px;
+    }
+
+    .faq .title h2 {
+        font-size: 20px;
+    }
+
+    .accordion .card-header a {
+        font-size: 10px;
+    }
+
+    .accordion .card-body {
+        font-size: 10px;
+    }
+
+    .accordion .card-header i {
+        font-size: 1rem;
+    }
+
+    footer {
+        margin-top: 60px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+
+    .container {
+        width: 100%;
+        max-width: none;
+    }
+
+    .mobile-view {
+        width: 300px;
+    }
+
+    header {
+        padding-left: 10px;
+    }
+
+    header .title {
+        margin-top: 50px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    header img {
+        width: 365px;
+        margin-top: 50px;
+    }
+
+    .services-text h2 {
+        font-size: 20px;
+    }
+
+    .services .desc-service-text {
+        font-size: 12px;
+    }
+
+    .fitur .card {
+        width: 100%;
+        height: 100%;
+    }
+
+    .fitur .card-body h3 {
+        font-size: 14px;
+    }
+
+    .fitur .card-body p {
+        font-size: 12px;
+    }
+
+    .testimonial .card {
+        width: 100%;
+    }
+
+    .carousel-control-prev {
+        margin-left: 320px;
+    }
+
+    .carousel-control-next {
+        margin-right: 320px;
+    }
+
+    footer {
+        margin-left: 10px;
+    }
+
+    footer .kolom1,
+    footer .kolom2,
+    footer h5,
+    footer .kolom4 {
+        font-size: 20px;
+    }
+
+}
